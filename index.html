@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="pp.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            height: 80px;
+            background-color: rgb(34, 34, 107);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        nav ul li {
+            text-decoration: none;
+            list-style: none;
+            margin: 0 23px;
+            ;
+        }
+
+        nav ul li a:hover {
+            color: lavender;
+            font-size: 1.0rem;
+            transition: all 0.3s ease-in-out;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            list-style: none;
+            margin: 0 23px;
+            ;
+        }
+
+        .left {
+            font-size: 2rem;
+            font-weight: 1000;
+
+        }
+
+        .firstSection {
+    display: flex;
+    justify-content: space-between; /* Changed from space-around to ensure left and right alignment */
+    align-items: center; /* Vertically center the content */
+    margin: 10px 0;
+    max-width: 80vw; /* Limit the width to match the second section */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+        .firstSection > div {
+            width: 45%; /* Adjusted to give more balanced space, can tweak as needed */
+        }
+
+        .leftSection {
+            font-size: 3rem;
+            margin: 30px 0;
+        }
+
+        .leftSection .buttons {
+            padding: 10px 0;
+        }
+        .leftSection .btn {
+            background-color: rgb(23, 8, 106);
+            color: white;
+            border: 2px solid white;
+            font-size: 20px;
+            cursor: pointer;
+            margin-right: 10px; /* Add some space between buttons */
+            padding: 5px 15px; /* Add padding for better button appearance */
+        }
+
+        .rightSection img {
+            margin: 30px 0;
+            width: 100%; /* Ensure the image takes full width of its container */
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .purple {
+            color: rgb(255, 0, 255);
+        }
+
+        .textgrey {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(255, 0, 255);
+        }
+
+        .secondSection hr {
+            border: none;
+            /* Remove default border */
+            height: 4px;
+            /* Thickness of the line */
+            background: linear-gradient(to right, rgb(255, 0, 255), rgb(34, 34, 107));
+            /* Gradient from purple to navy */
+            width: auto;
+            margin: 20px auto;
+            /* Center the line and add spacing */
+            border-radius: 5px;
+            /* Rounded edges for a softer look */
+            animation: hrGrow 1s ease-in-out;
+            /* Animation on page load */
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            font-size: larger;
+            height: 80vh;
+
+        }
+
+        .secondSection h1 {
+            text-align: left;
+            font-size: 3rem;
+            margin: 20px 0;
+        }
+
+        .secondSection .box {
+            width: 115vw;
+            border-radius: 20px;
+            height: 2px;
+            margin: 25px auto;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 60px;
+            width: 1px;
+            background-color: rgb(255, 0, 255);
+            margin: 0 90px;
+        }
+
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -52px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            margin: 0px 0;
+            top: 55px;
+            width: 10px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 60px;
+            font-size: 9px;
+            margin: 10px 0;
+            color: gray;
+            width: 150px;
+            text-align: justify;
+        }
+
+        footer {
+            background-color: rgb(12, 3, 29);
+            height: 233px;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-between;
+        }
+        .footer ul{
+            list-style: none;
+        }
+        .footer > div{
+            width: 223px;
+        }
+        footer .footer-right{
+            text-align: center;
+            padding: 20px 0;
+            font-size: 18px;
+            color: gray;
+            padding: 12px 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: rgb(235, 225, 225);
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Abdul Wahid's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">Hi, my name is <span class="purple"> Abdul Wahid (SULTAN)</span>
+                <div>I am a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Github</button>
+
+                </div>
+
+            </div>
+
+            <div class="rightSection">
+                <img src="poppo.png" alt="Abdul Wahid" style="width: 100%; height: auto; border-radius: 50%;">
+            </div>
+        </section>
+        <section class="secondSection" id="About">
+            <span class="textgrey">
+                <hr>What I have done so far
+            </span>
+            <h1>Work Experiences</h1>
+            <hr>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="pop.png" alt="Work Icon">
+                    <div class="vertical-title">HTML Developer</div>
+                    <div class="vertical-desc">June 2024 - August 2024: Interned at XYZ Company, building responsive web
+                        applications using HTML, CSS, and JavaScript.</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="pop.png" alt="Work Icon">
+                    <div class="vertical-title">CSS Developer</div>
+                    <div class="vertical-desc">October 2024 - November 2024: Created branding assets and UI mockups for
+                        a mobile app using Adobe Photoshop and Illustrator.</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="pop.png" alt="Work Icon">
+                    <div class="vertical-title">JS Developer</div>
+                    <div class="vertical-desc">September 2023 - December 2023: Developed a full-stack application using
+                        React and Node.js for a startup.</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="pop.png" alt="Work Icon">
+                    <div class="vertical-title">Python Developer</div>
+                    <div class="vertical-desc">March 2024 - May 2024: Freelance project creating a REST API with Node.js
+                        and MongoDB for a task management app.</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="pop.png" alt="Work Icon">
+                    <div class="vertical-title">Java Developer</div>
+                    <div class="vertical-desc">January 2024 - February 2024: Designed UI/UX for a local business website
+                        using Figma and Adobe XD.</div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="pop.png" alt="Work Icon">
+                    <div class="vertical-title">PHP Developer</div>
+                    <div class="vertical-desc">September 2023 - December 2023: Developed a full-stack application using
+                        React and Node.js for a startup.</div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Developer Sultan's Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+
+                </ul>
+            </div>
+
+        </div>
+        <div class="footer-right">Copyright &#169;www.sultanportfolio.com | All rights reserved</div>
+
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Backend developer', 'Web Designer', 'Software engineer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
